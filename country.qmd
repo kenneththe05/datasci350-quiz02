@@ -20,23 +20,12 @@ country_name = "Canada"
 country_df = df[df["country"] == country_name].sort_values("year")
 
 plt.figure()
-plt.plot(country_df["year"], country_df["life_expectancy"])
-plt.xlabel("Year")
-plt.ylabel("Life Expectancy")
-plt.title(f"Life Expectancy Over Time in {country_name}")
-plt.show()
+plt.plot(country_df["year"], country_df["life_expectancy"], label="Life Expectancy")
+plt.plot(country_df["year"], country_df["gdp_per_capita"], label="GDP per Capita")
+plt.plot(country_df["year"], country_df["population_millions"], label="Population (Millions)")
 
-plt.figure()
-plt.plot(country_df["year"], country_df["gdp_per_capita"])
 plt.xlabel("Year")
-plt.ylabel("GDP per Capita")
-plt.title(f"GDP per Capita Over Time in {country_name}")
-plt.show()
-
-plt.figure()
-plt.plot(country_df["year"], country_df["population_millions"])
-plt.xlabel("Year")
-plt.ylabel("Population (Millions)")
-plt.title(f"Population Over Time in {country_name}")
+plt.title("Trends Over Time in Canada")
+plt.legend()
 plt.show()
 ```
