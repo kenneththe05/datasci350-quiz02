@@ -14,10 +14,52 @@
     "text": "About this site"
   },
   {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "Life Expectancy and GDP per Capita",
+    "section": "",
+    "text": "This page explores the relationship between life expectancy and GDP per capita using the Gapminder dataset.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load dataset\ndf = pd.read_csv(\"gapminder.csv\")\n\n# Scatter plot\nplt.figure()\nplt.scatter(df[\"gdp_per_capita\"], df[\"life_expectancy\"])\nplt.xlabel(\"GDP per Capita\")\nplt.ylabel(\"Life Expectancy\")\nplt.title(\"Life Expectancy vs GDP per Capita\")\nplt.show()"
+  },
+  {
+    "objectID": "life-gdp.html#introduction",
+    "href": "life-gdp.html#introduction",
+    "title": "Life Expectancy and GDP per Capita",
+    "section": "",
+    "text": "This page explores the relationship between life expectancy and GDP per capita using the Gapminder dataset.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load dataset\ndf = pd.read_csv(\"gapminder.csv\")\n\n# Scatter plot\nplt.figure()\nplt.scatter(df[\"gdp_per_capita\"], df[\"life_expectancy\"])\nplt.xlabel(\"GDP per Capita\")\nplt.ylabel(\"Life Expectancy\")\nplt.title(\"Life Expectancy vs GDP per Capita\")\nplt.show()"
+  },
+  {
+    "objectID": "country.html",
+    "href": "country.html",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "This page analyzes changes in life expectancy, GDP per capita, and population over time for Canada using the Gapminder dataset.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load dataset\ndf = pd.read_csv(\"gapminder.csv\")\n\n# Select Canada\ncountry_name = \"Canada\"\ncountry_df = df[df[\"country\"] == country_name].sort_values(\"year\")\n\n# Plot trends over time\nplt.figure()\nplt.plot(country_df[\"year\"], country_df[\"life_expectancy\"], label=\"Life Expectancy\")\nplt.plot(country_df[\"year\"], country_df[\"gdp_per_capita\"], label=\"GDP per Capita\")\nplt.plot(country_df[\"year\"], country_df[\"population_millions\"], label=\"Population (Millions)\")\n\nplt.xlabel(\"Year\")\nplt.title(\"Trends Over Time in Canada\")\nplt.legend()\nplt.show()"
+  },
+  {
+    "objectID": "country.html#introduction",
+    "href": "country.html#introduction",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "This page analyzes changes in life expectancy, GDP per capita, and population over time for Canada using the Gapminder dataset.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load dataset\ndf = pd.read_csv(\"gapminder.csv\")\n\n# Select Canada\ncountry_name = \"Canada\"\ncountry_df = df[df[\"country\"] == country_name].sort_values(\"year\")\n\n# Plot trends over time\nplt.figure()\nplt.plot(country_df[\"year\"], country_df[\"life_expectancy\"], label=\"Life Expectancy\")\nplt.plot(country_df[\"year\"], country_df[\"gdp_per_capita\"], label=\"GDP per Capita\")\nplt.plot(country_df[\"year\"], country_df[\"population_millions\"], label=\"Population (Millions)\")\n\nplt.xlabel(\"Year\")\nplt.title(\"Trends Over Time in Canada\")\nplt.legend()\nplt.show()"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "datasci350-quiz02",
+    "title": "Gapminder Data Explorer",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "The Gapminder dataset contains country-level data for 142 countries from 1952 to 2007 (at 5-year intervals), including life expectancy, GDP per capita, and population.\nAbout\nLife Expectancy and GDP per Capita\nLife Expectancy and Population\nCountry Analysis"
+  },
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "This page explores the relationship between life expectancy and population using the Gapminder dataset.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load dataset\ndf = pd.read_csv(\"gapminder.csv\")\n\n# Scatter plot\nplt.figure()\nplt.scatter(df[\"population_millions\"], df[\"life_expectancy\"])\nplt.xlabel(\"Population (Millions)\")\nplt.ylabel(\"Life Expectancy\")\nplt.title(\"Life Expectancy vs Population\")\nplt.show()"
+  },
+  {
+    "objectID": "life-population.html#introduction",
+    "href": "life-population.html#introduction",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "This page explores the relationship between life expectancy and population using the Gapminder dataset.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load dataset\ndf = pd.read_csv(\"gapminder.csv\")\n\n# Scatter plot\nplt.figure()\nplt.scatter(df[\"population_millions\"], df[\"life_expectancy\"])\nplt.xlabel(\"Population (Millions)\")\nplt.ylabel(\"Life Expectancy\")\nplt.title(\"Life Expectancy vs Population\")\nplt.show()"
   }
 ]

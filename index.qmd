@@ -1,7 +1,13 @@
 ---
-title: "datasci350-quiz02"
+title: "Gapminder Data Explorer"
 ---
 
-This is a Quarto website.
+The Gapminder dataset contains country-level data for 142 countries from 1952 to 2007 (at 5-year intervals), including life expectancy, GDP per capita, and population.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+[About](about.qmd)
+
+[Life Expectancy and GDP per Capita](life-gdp.qmd)
+
+[Life Expectancy and Population](life-population.qmd)
+
+[Country Analysis](country.qmd)
